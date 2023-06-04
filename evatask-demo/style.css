@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.toggle{
+    display: none;
+    position: fixed;
+}
+.navstart{
+    display: flex;
+    
+}
+.logo{
+    background-color: rgb(253, 206, 52);
+    width: 164px;
+    height: auto;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-bottom-right-radius: 55px;
+    position: fixed;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    padding: 10px 20px;
+    
+    
+}
+.navbar li{
+    padding: 20px;
+    color: black;
+}
+.navbar li a{
+    text-decoration: none;
+    color: black;
+}
+.navend{
+    padding: 10px 20px;
+    padding-top: 30px;
+    
+}
+.navend ul{
+    display: flex;
+    list-style: none;
+    
+}
+.navend ul li{
+    padding: 20px;
+}
+.navend ul li a{
+    color: black;
+}
+.navend button{
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: inherit;
+    border-radius: 50px;
+    padding: 12px 30px;
+
+}
+@media (max-width:1291px)
+{
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+
+    }
+    .logo{
+        left: 2rem;
+    }
+}
+@media (max-width:840px)
+{
+    .navbar,.navend{
+        display: none;
+    }
+    .logo{
+        position: fixed;
+        left: 1rem;
+    }
+    .toggle{
+        display: block;
+        right: 1rem;
+    }
+}
+
