@@ -84,6 +84,13 @@ header{
     .logo{
         left: 2rem;
     }
+    .topcontent{
+        margin-top: 5%;
+        
+    }
+    .navbar{
+        right: 3rem;
+    }
 }
 @media (max-width:840px)
 {
@@ -98,5 +105,37 @@ header{
         display: block;
         right: 1rem;
     }
+    .topcontent{
+        padding-top: 10%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .topcontent #book{
+        display: block;
+    }
 }
-
+.topcontent{
+    margin-left: 8%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+.topcontent .cont1{
+    
+}
+.topcontent button{
+    border: none;
+    background-color: yellow;
+    border-radius: 50px;
+    padding: 12px 25px;
+    top: 5%;
+}
+.topcontent .book{
+    font-size: small;
+}
+.topcontent .cont2{
+    padding-right: 10rem;
+}
